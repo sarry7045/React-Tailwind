@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "./RouteAuth";
 
 function Navbar() {
+  const auth = useAuth();
   return (
     <div>
       <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
@@ -55,6 +57,21 @@ function Navbar() {
             >
               Temporary
             </Link>
+            {/* <Link
+              to="/profile"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4 text-sm"
+            >
+              Profile
+            </Link>
+
+            {!auth.user && (
+              <Link
+                to="/login"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4 text-sm"
+              >
+                Login
+              </Link>
+            )} */}
           </div>
           <div></div>
         </div>

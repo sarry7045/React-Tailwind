@@ -5,6 +5,7 @@ import CovidLive from "./CovidLive";
 import Netflix from "./Netflix";
 import Sdata from "./Sdata";
 import { useNavigate } from "react-router-dom";
+
 const Tailwind = () => {
   const [num, setNum] = useState();
   const Fname = useContext(Firstname);

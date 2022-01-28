@@ -22,6 +22,8 @@ function MemoryGame() {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }));
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
   };
@@ -72,7 +74,7 @@ function MemoryGame() {
         <div className="MemoryGame-Container">
           <h1 className="py-4">Magic Match</h1>
           <button onClick={shuffleCards} className="my-4">
-            New Gamee
+            New Game
           </button>
 
           <div className="card-grid">
