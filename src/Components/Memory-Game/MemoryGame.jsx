@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./MemoryGame.css";
-import MemoryCardComponent from "./MemoryCardComponent";
+import "../Memory-Game/MemoryGame.css";
+import MemoryCardComponent from "../Memory-Game/MemoryCardComponent.jsx";
 
 const cardImages = [
   { src: "./Images/helmet-1.png", match: false },

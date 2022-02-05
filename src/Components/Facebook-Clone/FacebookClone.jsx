@@ -1,5 +1,5 @@
 import React from "react";
-import Searchbar from "./SearchBar";
+import Searchbar from "../../Components/SearchBar.jsx";
 import { useNavigate, Link, Outlet } from "react-router-dom";
 
 function FacebookClone() {

@@ -46,16 +46,22 @@ function Navbar() {
               Facebook Clone
             </Link>
             <Link
-              to="/memorygame"
+              to="microsoftclone"
               class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4  text-sm"
             >
-              Memory Game
+              MicroSoft Clone
             </Link>
             <Link
               to="/temporary"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4  text-sm"
+            >
+              Template
+            </Link>
+            <Link
+              to="/memorygame"
               class="block mt-4 lg:inline-block lg:mt-0 text-teal-50 hover:text-white mr-4 text-sm"
             >
-              Temporary
+              Memory Game
             </Link>
             {/* <Link
               to="/profile"

@@ -1,9 +1,8 @@
 import React, { useState, useContext } from "react";
 import { Firstname, Lastname } from "../App";
-// import "./input.css"
-import CovidLive from "./CovidLive";
-import Netflix from "./Netflix";
-import Sdata from "./Sdata";
+import CovidLive from "./Corona-Cases/CovidLive.jsx";
+import Netflix from "./Netflix-Cards/Netflix.jsx";
+import Sdata from "./Netflix-Cards/Sdata.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Tailwind = () => {

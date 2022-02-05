@@ -1,8 +1,7 @@
-import Tailwind from "./Components/Tailwind";
-import Temporary from "./Components/Temporary";
-import React, { createContext, useState, useEffect } from "react";
-import FacebookClone from "./Components/FacebookClone";
-import MemoryGame from "./Components/MemoryGame";
+import Temporary from "./Components/Template/Temporary.jsx";
+import React, { createContext } from "react";
+import FacebookClone from "./Components/Facebook-Clone/FacebookClone.jsx";
+import MemoryGame from "./Components/Memory-Game/MemoryGame.jsx";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import PageNotFound from "./Components/PageNotFound";
@@ -10,8 +9,9 @@ import Profile from "./Components/Profile";
 import { AuthProvider } from "./Components/RouteAuth";
 import Login from "./Components/Login";
 import ReqAuth from "./Components/ReqAuth";
+import MicrosoftClone from "./Components/Microsoft-Clone/MicrosoftClone.jsx";
 
-const LazyHome = React.lazy(() => import("./Components/Tailwind"));
+const LazyHome = React.lazy(() => import("./Components/Home.jsx"));
 const Firstname = createContext();
 const Lastname = createContext();
 
@@ -55,7 +55,8 @@ function App() {
           ></Route>
 
           <Route path="/login" element={<Login />}></Route>
-          {/* <Route path="*" element={<PageNotFound />}></Route> */}
+          <Route path="/microsoftclone" element={<MicrosoftClone />}></Route>
+          <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
       </AuthProvider>
     </>

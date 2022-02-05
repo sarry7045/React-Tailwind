@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import SkeletonComponent from "./SkeletonCom";
+import SkeletonComponent from "../Corona-Cases/SkeletonCom.jsx"
 
 const CovidLive = () => {
   const [data, setData] = useState([]);

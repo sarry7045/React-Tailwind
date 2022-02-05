@@ -1,4 +1,4 @@
-import "../Components/MemoryGame.css";
+import "../Memory-Game/MemoryGame.css"
 
 function MemoryCardComponent({ card, handleChoice, flipped, disabled }) {
   const handleClick = () => {
